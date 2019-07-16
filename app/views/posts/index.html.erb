@@ -1,0 +1,49 @@
+
+<html>
+  <head>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag   'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <body>
+
+
+  <nav class="nav justify-content-center">
+    <a class="nav-link active" href="/">Home</a>
+    <a class="nav-link active" href="#">Cool Tech</a>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Articles</a>
+      </li>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">2019 Articles</a>
+      <a class="dropdown-item" href="#">2020 Articles</a>
+      <a class="dropdown-item" href="#">2021 Articles</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">Archive</a>
+    </div>
+  </nav>
+  <hr>
+
+  <br/>
+  <div class="row">
+    <img src="../assets/ruby7.jpg" class="rounded mx-auto d-block" alt="...">
+    <div class="col12 col-md-8">
+
+      <h1>Ruby Retro</h1>
+        <h2>Coding like a Mother</h2> 
+    </div>
+    <div class="col-6 col-md-4">
+      <h3>I am Ruby Retro. Aspiring web developer who has completed coding bootcamp at Vanderbilt University here in Nashville, Tennessee. Looking forward to learning more and putting it to good use. </h3>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+    <%= yield %>
+
+What do I want to be when I grow up? Who says I want to grow up? Grow old - I guess I'll probably have to do that - but UP? Naw. I want to stay young and keep the fun in my life. I want to be learning something new all the time. I want to explore. I want to build. I want to play and for that play to make the world a better place for as many people as possible.
+  </body>
+</html>
