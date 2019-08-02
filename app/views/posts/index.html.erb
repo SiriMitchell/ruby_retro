@@ -1,49 +1,220 @@
+<script>
+  function openPage(pageName, elmnt, color) {
+  // Hide all elements with class="tabcontent" by default */
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
 
-<html>
-  <head>
-    <%= csrf_meta_tags %>
-    <%= stylesheet_link_tag   'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
-  <body>
+  // Remove the background color of all tablinks/buttons
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+
+  // Show the specific tab content
+  document.getElementById(pageName).style.display = "block";
+
+  // Add the specific color to the button used to open the tab content
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script> 
 
 
-  <nav class="nav justify-content-center">
-    <a class="nav-link active" href="/">Home</a>
-    <a class="nav-link active" href="#">Cool Tech</a>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Articles</a>
-      </li>
-    <div class="dropdown-menu">
-      <a class="dropdown-item" href="#">2019 Articles</a>
-      <a class="dropdown-item" href="#">2020 Articles</a>
-      <a class="dropdown-item" href="#">2021 Articles</a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="#">Archive</a>
-    </div>
-  </nav>
-  <hr>
+<body>
+ <div id="Home" class="tabcontent">
+  <h3>I am Ruby Retro</h3>
+  <p>Junior Full Stack Web Dev. Entrepreneur and mom of 3. Join me in learning about what the coding world has going on.. Let's build cool stuff!  <br>
+   </p>
+</div>
 
-  <br/>
+<div id="2019" class="tabcontent">
+  <h3>2019 Snippets</h3>
+  <p>Some news this fine day!</p>
+
+<div class="container">
   <div class="row">
-    <img src="../assets/ruby7.jpg" class="rounded mx-auto d-block" alt="...">
-    <div class="col12 col-md-8">
-
-      <h1>Ruby Retro</h1>
-        <h2>Coding like a Mother</h2> 
+    <div class="col-sm-4">
+      <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
     </div>
-    <div class="col-6 col-md-4">
-      <h3>I am Ruby Retro. Aspiring web developer who has completed coding bootcamp at Vanderbilt University here in Nashville, Tennessee. Looking forward to learning more and putting it to good use. </h3>
+
+    <div class="col-sm-4">
+      <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
     </div>
   </div>
 </div>
+
+<br /><br />
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br /><br />
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br /><br />
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br /><br />
+
+
+
+</div>
+
+<div id="2020" class="tabcontent">
+  <h3>2020 Snippets</h3>
+  <p>Get in touch, or swing by for a cup of coffee.</p>
+</div>
+
+<div id="Gem" class="tabcontent">
+  <h3>Gem</h3>
+  <p>Who we are and what we do.</p>
+</div>
+
+<div id="Neat Things" class="tabcontent">
+  <h3>Neat Things</h3>
+  <p>Who we are and what we do.</p>
+</div>
+     
 
 
 
 
 
     <%= yield %>
-
-What do I want to be when I grow up? Who says I want to grow up? Grow old - I guess I'll probably have to do that - but UP? Naw. I want to stay young and keep the fun in my life. I want to be learning something new all the time. I want to explore. I want to build. I want to play and for that play to make the world a better place for as many people as possible.
   </body>
-</html>

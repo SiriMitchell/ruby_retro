@@ -9,7 +9,25 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+<body>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <img src="../assets/ruby6.jpg" class="rounded mx-auto d-block" alt="..."><br />
+    <h1>Ruby Retro</h1>
+      <h2>Coding Like a Mother</h2>
+  </div>
+</div>
+<hr/>
+
+
+<button class="tablink" onclick="openPage('Home', this)" id="defaultOpen">Home</button>
+<button class="tablink" onclick="openPage('2019', this)">2019</button>
+<button class="tablink" onclick="openPage('2020', this)">2020</button>
+<button class="tablink" onclick="openPage('Gem', this)">Gem</button>
+<button class="tablink" onclick="openPage('About', this)">Neat Things</button>
+ 
+
+
     <%= yield %>
   </body>
 </html>

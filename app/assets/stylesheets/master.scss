@@ -4,38 +4,83 @@
 @import url('https://fonts.googleapis.com/css?family=Monoton&display=swap');
 
 body {
-  background: image_url('dark-honeycomb.png');
+  background: image_url('connectwork.png');
   background-size: 100%;
   }
 
+.jumbotron {
+  background: image_url('connectwork.png');
+  background-size: 100%;
+}
 
-  h1 {
-    font-family: 'Monoton', cursive;
-    text-align: center;
-    font-size: 130px;
-    color: rgb(247, 2, 31);
-  }
+hr {
+  display: block;
+  height: 5px;
+  border: 0;
+  border-top: 5px solid #821107;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding: 0;
 
-  h2 {
-    font-family: 'Permanent Marker', cursive;
-    text-align: center;
-    font-size: 27px;
-    color: rgb(224, 2, 28);
-  }
+}
 
-  h3 {
-    font-family: 'Permanent Marker', cursive;
-    font-size: 20px;
-    color: rgb(224, 2, 28);
-  }
+h1 {
+  font-family: 'Monoton', cursive;
+  text-align: center;
+  font-size: 130px;
+  color: rgb(247, 2, 31);
+}
 
-  .nav-link {
-    font-family: 'Permanent Marker', cursive;
-    font-size: 20px;
-    color: rgb(224, 2, 28);
-  }
+h2 {
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+  font-size: 45px;
+  color: rgb(224, 2, 28);
+}
 
-  .nav-item {
-    color: rgb(224, 2, 28);
-  }
+h3 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 20px;
+  color: rgb(224, 2, 28);
+}
 
+.nav-link {
+  font-family: 'Permanent Marker', cursive;
+  color: rgb(224, 2, 28);
+  font-size: 25px;
+  text-align: center;
+}
+
+.nav-link:hover {
+  color: #821107;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.tablink {
+  background-color: black;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  width: 20%;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 25px;
+  color: rgb(224, 2, 28);
+}
+
+.tablink:hover {
+  background-color: #821107;
+  border-color: #821107;
+}
+
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
