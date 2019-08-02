@@ -1,5 +1,5 @@
 @import "bootstrap";
-
+@import "font-awesome";
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Monoton&display=swap');
 
@@ -69,13 +69,26 @@ body, html {
   padding: 14px 16px;
   width: 20%;
   font-family: 'Permanent Marker', cursive;
-  font-size: 25px;
+  font-size: 35px;
   color: rgb(224, 2, 28);
 }
 
 .tablink:hover {
   background-color: #821107;
-  border-color: #821107;
+  //border-color: #821107;
+  border-color: green;
+}
+
+.tablink:active {
+  border-color: green;
+}
+
+.tablink:focus {
+  border-color: green;
+}
+
+.tablink:target {
+  border-color: green;
 }
 
 .tabcontent {
@@ -101,27 +114,27 @@ a {
 }
 
 a.button {
-    color: rgba(30, 22, 54, 0.6);
-    box-shadow: rgba(30, 22, 54, 0.4) 0 0px 0px 2px inset;
-    position: absolute;
-    margin-left: 10px;
+  color: rgba(30, 22, 54, 0.6);
+  box-shadow: rgba(30, 22, 54, 0.4) 0 0px 0px 2px inset;
+  position: absolute;
+  margin-left: 10px;
 
 }
 
 a.button:hover {
-    color: rgba(255, 255, 255, 0.85);
-    box-shadow: rgba(30, 22, 54, 0.7) 0 0px 0px 40px inset;
+  color: rgba(255, 255, 255, 0.85);
+  box-shadow: rgba(30, 22, 54, 0.7) 0 0px 0px 40px inset;
 }
 
 a.button2 {
-    color: #e0021c;
-    box-shadow: #e0021c 0 0px 0px 2px inset;
-
+  color: #e0021c;
+  box-shadow: #e0021c 0 0px 0px 2px inset;
+  margin-bottom: 15px;
 }
 
 a.button2:hover {
-    color: black;
-    box-shadow: #e0021c 0 80px 0px 2px inset;
+  color: black;
+  box-shadow: #e0021c 0 80px 0px 2px inset;
 }
 
 .button2 {
@@ -130,4 +143,17 @@ a.button2:hover {
 
 .card {
   height: 400px;
+}
+
+.card-title {
+  font-size: 25px;
+  font-family: 'Permanent Marker', cursive;
+  color: rgb(224, 2, 28);
+  text-align: center;
+}
+
+.card-text {
+  font-size: 20px;
+  color: black;
+  text-align: center;
 }
